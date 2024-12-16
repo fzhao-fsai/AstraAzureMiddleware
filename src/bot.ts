@@ -18,7 +18,7 @@ export class EchoBot extends ActivityHandler {
       }
 
       const data = { question };
-      if (sessionInfo.sessionId && process.env.FSAI_AGENT_MEMORY !== NULL && process.env.FSAI_AGENT_MEMORY !== undefined) {
+      if (sessionInfo.sessionId && process.env.FSAI_AGENT_MEMORY !== null && process.env.FSAI_AGENT_MEMORY !== undefined) {
         data['sessionId'] = sessionInfo.sessionId;
         data['chatId'] = sessionInfo.chatId;
       }
